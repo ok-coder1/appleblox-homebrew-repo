@@ -8,7 +8,7 @@ cask "appleblox@pre" do
   url "https://github.com/AppleBlox/appleblox/releases/download/#{version}/AppleBlox-#{version}_#{arch}.dmg",
     verified: "github.com/AppleBlox/appleblox/"
   name "AppleBlox"
-  desc "AppleBlox is a Roblox launcher for macOS, inspired by Bloxstrap. It includes features such as DiscordRPC and Fast-flags, with ongoing development for additional functionality."
+  desc "AppleBlox is a Roblox launcher for macOS, inspired by Bloxstrap."
   homepage "https://appleblox.com/"
 
   livecheck do
@@ -16,7 +16,8 @@ cask "appleblox@pre" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: :high_sierra
+  depends_on "roblox"
 
   app "AppleBlox.app"
 
