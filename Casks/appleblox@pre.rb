@@ -7,6 +7,7 @@ cask "appleblox@pre" do
   end
   on_intel do
     sha256 "30e5809ef65ea585aa6e794b441e731c34e2e21ca5d1c295cbf02e26f0e94b3b"
+  end
 
   url "https://github.com/AppleBlox/appleblox/releases/download/#{version}/AppleBlox-#{version}_#{arch}.dmg",
     verified: "github.com/AppleBlox/appleblox/"
