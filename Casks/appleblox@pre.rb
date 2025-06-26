@@ -12,7 +12,7 @@ cask "appleblox@pre" do
   url "https://github.com/AppleBlox/appleblox/releases/download/#{version}/AppleBlox-#{version}_#{arch}.dmg",
     verified: "github.com/AppleBlox/appleblox/"
   name "AppleBlox"
-  desc "Roblox launcher for macOS, inspired by Bloxstrap"
+  desc "Roblox launcher for macOS inspired by Bloxstrap"
   homepage "https://appleblox.com/"
 
   livecheck do
